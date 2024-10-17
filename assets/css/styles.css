@@ -6,6 +6,7 @@ html {
 }
 body {
   background-color: #fffaf5;
+  z-index: -999;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
@@ -452,4 +453,107 @@ h6 {
   font-weight: 500;
   border-bottom: 2px solid  #FF5D31;
   padding-top: 5px;
+}
+/* service */
+.service{
+  margin-top: 130px;
+  padding: 68px 0 100px;
+  background: #FFF6ED;
+}
+.service__top{
+  text-align: center;
+}
+.service__top-desc{
+  color: #5E6085;
+  font-family: Sora;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.service__top-heading{
+  margin-bottom: 71px;
+  color: #000958;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 62px;
+}
+.service__body{
+  display: grid;
+  grid-template-columns: auto 1fr auto ;
+}
+.block__heading{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.service__card{
+  /* margin-top: 24px; */
+  width: 294px;
+  height: 208px;
+  padding: 30px 22px 30px 28px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+  background: #FFF;
+}
+.service__card:not(:first-child){
+  margin-top: 24px;
+}
+.service__body-center{
+  margin:  0 auto;
+
+}
+.service__card-heading{
+  color: #000958;
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.service__card-desc{
+  width: 244px;
+  margin: 18px 0 24px 0;
+  color: #656689;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+.service__card-link{
+  color: #34396A;
+  font-family: Sora;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.service__frame{
+  position: relative;
+  display: flex;
+  margin-bottom: 56px;
+
+}
+.service__frame-bgc{
+  position: absolute;
+  bottom: 0;
+  width: 430px;
+  height: 350px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+}
+.service-img{
+  z-index: 999;
+}
+.btn-link{
+  width: 214px;
+  height: 56px;
+  border-radius: 31px;
+  border: 1px solid #FF5B2E;
+  opacity: 0.6;
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+  color: #FF5B2E;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background: #FFF6ED;
+}
+.block-btn{
+  display: flex;
+  justify-content: center;
 }
