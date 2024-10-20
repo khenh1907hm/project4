@@ -557,3 +557,133 @@ h6 {
   display: flex;
   justify-content: center;
 }
+.team{
+  margin-top: 130px;
+}
+
+.team__label{
+  margin: 0 auto;
+  color: #5E6085;
+  text-align: center;
+  font-family: Sora;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.team__heading{
+  margin-top: 15px;
+  text-align: center;
+  color: #000958;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 62px; /* 119.231% */
+}
+.team__list{
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 35px;
+}
+.team__image{
+  position: relative;
+  margin: 0 16px;
+  border-radius: 130px;
+  /* overflow: hidden; */
+}
+.team__image::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 94%;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #90CCFF 0%, #59A8EB 95.96%);
+}
+.team__image::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: calc(100% + 36px);
+  height: 100%;
+  background-size: 100%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.team__item:nth-child(1) .team__image::after{
+ background-image: url(../img/decor-staff-01.png);
+}
+
+.team__item:nth-child(2) .team__image::before{
+  background: #FF997E;
+}
+
+.team__item:nth-child(2) .team__image::after{
+ background-image: url(../img/decor-staff-02.png);
+}
+
+.team__item:nth-child(3) .team__image::before{
+  background: #FABF3E;
+}
+
+.team__item:nth-child(3) .team__image::after{
+ background-image: url(../img/decor-staff-03.png);
+}
+
+.team__item:nth-child(4) .team__image::before{
+  background: #5BD6E2;
+}
+
+.team__item:nth-child(4) .team__image::after{
+ background-image: url(../img/decor-staff-04.png);
+}
+
+.team__item:nth-child(even)  .team__image::after{
+  background-position: 0 16px;
+}
+.team__bg{
+  position: absolute;
+  bottom: 0;
+}
+.team__staff{
+  position: relative;
+  display: block;
+  z-index: 1;
+  border-radius: inherit;
+}
+.team__role{
+  color: #656689;
+  margin-top: 34px;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.team__name{
+  color: #000958;
+  text-align: center;
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.team__btn{
+  margin: 48px  auto;
+  width: 193px;
+  height: 56px;
+  border-radius: 31px;
+  border: 1px solid #FF5B2E;
+  opacity: 0.6;
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+.team__link{
+  display: flex;
+  justify-content: center;
+  color: #FF5B2E;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  line-height: 56px;
+}
