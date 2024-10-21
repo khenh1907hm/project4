@@ -297,6 +297,10 @@ h6 {
   box-shadow: 0 4px 15px -3px rgba(255, 93, 49, 0.69);
   border-radius: 4px;
 }
+.about__checkl-item::after{
+  content: "";
+
+}
 .check-icon{
   position: absolute;
   top: 3px;
@@ -687,3 +691,146 @@ h6 {
   display: flex;
   line-height: 56px;
 }
+.pricing{
+  background: #FFF6ED;
+  margin-top: 130px;
+  padding-top: 86px;
+  padding-bottom: 86px;
+}
+.pricing__introduct{
+  text-align: center;
+}
+.pricing__heading{
+  color: #000958;
+  /* text-align: center; */
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 62px; 
+}
+.pricing__title{
+  width: 709px;
+  margin-top: 24px;
+  margin-bottom: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #656689;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 30px; 
+}
+.pricing__switch{
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__switch-label{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  width: 276px;
+  height: 56px;
+  border-radius: 31px;
+  border: 1px solid #ff5b2e99;
+  user-select: none;
+  cursor: pointer;
+}
+.pricing__sale{
+  position: absolute;
+  top: -10px;
+  right: -111px;
+}
+.pricing__switch-label::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 100%;
+  background: #FF5B2E;
+  border-radius: inherit;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before{
+  width: 131px;
+  left: auto;
+  right: 0;
+}
+
+.pricing__switch-input:not(:checked) +.pricing__switch-label .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked +.pricing__switch-label .pricing__switch-value:nth-of-type(1)
+{
+  color: #ff5b2e;
+}
+
+.pricing__switch-value{
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.pricing__list{
+  margin: 56px 70px 0 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.pricing___list-item{
+  width: 302px;
+  height: 465px;
+  border-radius: 20px;
+  background: #FFF;
+  padding: 30px 28px 43px 28px;
+}
+.pricing__package{
+  color: #FF5B2E;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+}
+.pricing__name{
+  color: #3F4065;
+  margin: 8px 0 24px 0;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+}
+.pricing__price{
+  color: #000958;
+  font-family: Sora;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 34px; /* 103.03% */
+  margin-bottom: 22px;
+}
+.pricing__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 246px;
+  height: 44px;
+  border-radius: 39px;
+  border: 1px solid rgba(255, 91, 46, 0.60);
+  margin-bottom: 24px;
+
+  color: #FF5B2E;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+
+.pricing___list-item:nth-of-type(2) .pricing__btn {
+  background: #FF5B2E;/* Thay đổi màu nền cho nút trong card thứ hai */
+  color: #ffffff; /* Thay đổi màu chữ nếu cần */
+}
+.pricing__service-text{
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
