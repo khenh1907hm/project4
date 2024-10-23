@@ -72,7 +72,11 @@ h6 {
 
 /* Header */
 .header {
-  padding: 26px 0;
+  position: sticky;
+  top: -11px;
+  background-color: #fffaf5;
+  padding: 20px 0;
+  z-index: 999;
 }
 .header__inner {
   display: flex;
@@ -909,5 +913,198 @@ h6 {
   display: flex;
   justify-content: center;
 }
+.blog{
+  margin-top: 130px;
+}
+.blog__block{
+  display: flex;
+  gap: 512px;
+}
+.blog__heading{
+  margin-top: 39px;
+  color: #000958;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 62px; /* 119.231% */
+}
+.blog__decs{
+  width: 350px;
+  color: #656689;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.blog__btn{
+  display: inline-block ;
+  margin-top: 44px;
+  /* width: 182px;
+  height: 56px; */
+  border-radius: 31px;
+  border: 1px solid #ff5b2e99;
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+  padding: 20px 40px;
+  color: #FF5B2E;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+.blog__list{
+  display: flex;
+  gap: 48px;
+  margin-top: 54px;
+}
+.blog__frame{
+  position: relative;
+  width: 358px;
+  height: 362px;
+  border-radius: 24px;
+}
+.blog__frame::before{
+  content: "";
+  position: absolute;
+  width: 322px;
+  height: 296px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+}
+.blog__item:nth-child(1) .blog__frame::before{
+  background-image: url(../img/blog-01.svg);
+}
+.blog__item:nth-child(2) .blog__frame::before{
+  background-image: url(../img/blog-02.svg);
+
+}
+.blog__item:nth-child(3) .blog__frame::before{
+  background-image: url(../img/blog-03.svg);
+}
+.blog__item:nth-child(1) .blog__frame{
+  background: #90CCFF;
+}
+.blog__item:nth-child(2) .blog__frame{
+  background: #FF997E;
+}
+.blog__item:nth-child(3) .blog__frame{
+  background: #5BD6E2;
+}
+.blog__card-day{
+  padding-top: 24px;
+  margin-left: 36px;
+  color: #FFF;
+  font-family: Sora;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 17px; /* 121.429% */
+}
+.blog__card-heading{
+  margin: 28px 0 16px;
+  width: 338px;
+  color: #000958;
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 34px; /* 154.545% */
+}
+.blog__card-decs{
+  width: 351px;
+  color: #656689;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
 
 
+.footer{
+  margin-top: 131px;
+}
+.footer__inner{
+  display: flex;
+}
+.footer__contact{
+  padding-left: 135px;
+  width: 615px;
+  height: 516px;
+  background: #FFF6ED;
+}
+.footer__logo{
+  padding: 114px 0 35px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer__logo-text{
+  color: #000958;
+  font-family: Sora;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 25px; /* 100% */
+}
+
+.footer__input{
+  width: 268px;
+  height: 46px;
+  border-radius: 23px;
+  border: 1px solid rgba(255, 91, 46, 0.25);
+  opacity: 0.6;
+  background: #FFF;
+}
+.footer__block-input{
+  display: inline-block;
+  position: relative;
+}
+.footer__block-input::after{
+  content: "";
+  background-image: url(../img/footer-send.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  top: -1px;
+  right: 2px;
+  background-position: center;
+  width: 45px;
+  height: 80px;
+}
+.footer__desc{
+  margin: 68px 0 16px 0;
+  color: #000958;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 20px; /* 111.111% */
+}
+.footer__link{
+  position: relative;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  padding: 52px 0 0 130px;
+  column-gap: 100px;
+}
+.footer__link::after{
+  position: absolute;
+  content: "Copyright & Design By HoangMinh";
+  bottom: 25px;
+  left: 22px;
+  color: #656689;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+}
+.footer__link-heading{
+  margin-bottom: 14px;
+  color: #000958;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 20px; /* 111.111% */
+}
+.footer__link-text{
+  margin-bottom: 5px;
+  color: #656689;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+}
